@@ -1,0 +1,475 @@
+* {
+    box-sizing: border-box;
+}
+
+.body{
+    font-size: 16px;
+    line-height: 27px;
+    font-weight: 500;
+    color: #fff;
+    font-family: 'Montserrat';
+}
+
+.container {
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+/*Nav*/
+.header {
+    background-color: #fff;
+    position: sticky;
+    top: 0;
+    border-bottom: 3px solid #000;
+    z-index: 100;
+}
+#nav {
+    display: flex;
+    padding: 25px 0;
+    position: relative;
+}
+
+.nav__menu {
+    margin: 0;
+    padding: 0;
+}
+
+.nav__item {
+    display: inline-block;
+    text-decoration: none;
+    text-align: center;
+    
+    border: 3px solid #FF9900;
+    padding: 20px 10px;
+    margin-left: 20px;
+    border-radius: 10px;
+}
+
+.nav__item.active {
+    border-color: #9C9998;
+    margin-left: 0;
+}
+
+.nav__links {
+    color: #000;
+    text-decoration: none;
+
+    font-size: 16px;
+    font-family: 'Montserrat';
+    font-weight: 700;
+}
+
+.logo {
+    width: 250px;
+    height: 65px;
+    margin: 0 auto ;
+}
+
+#lang {
+    border: 3px solid #FF9900;
+    border-radius: 10px;
+    background-color: transparent;
+    width: 70px;
+    cursor: pointer;
+
+    font-size: 16px;
+    font-family: 'Montserrat';
+    font-weight: 700;
+    margin-left: 60px;
+}
+#hide__lang {
+    position: absolute;
+    display: none;
+    right: 0;
+    bottom: 5px;
+
+    font-size: 16px;
+    font-family: 'Montserrat';
+    font-weight: 700;
+    color: #000;
+    text-align: center;
+    text-decoration: none;
+    padding: 17px 0 0;
+
+    border: 3px solid #FF9900;
+    border-radius: 10px;
+    background-color: transparent;
+    width: 70px;
+    height: 60px;
+}
+
+/*Hero*/
+.title {
+    text-align: center;
+    font-size: 40px;
+    max-width: 700px;
+    font-family: 'Montserrat';
+    font-weight: 700;
+    margin: 70px auto 100px;
+}
+.hero__content {
+    display: flex;
+    align-items: center;
+}
+.hero__about {
+    display: flex;
+    flex-direction: column;
+    margin-right: 100px;
+    align-items: center;
+}
+.hero__subtitle {
+    font-size: 24px;
+    font-family: 'Montserrat';
+    font-weight: 700;
+}
+.text {
+    text-align: justify;
+    font-size: 16px;
+    font-family: 'Montserrat';
+    font-weight: 500;
+    padding: 10px 15px;
+    border: 3px solid #FF9900;
+    border-radius: 10px;
+}
+.hero__text {
+    margin: 15px 0 30px;
+}
+.gray {
+    color: #9C9998;
+}
+.orange {
+    color: #FF9900;
+}
+.btn__link {
+    display: inline-block;
+    text-decoration: none;
+    text-align: center;
+
+    background-color: #FF9900;
+    border: 3px solid #FF9900;
+    padding: 30px 30px 30px 90px;
+    border-radius: 10px;
+    transition: all 0.2s;
+
+    font-size: 16px;
+    font-family: 'Montserrat';
+    font-weight: 500;
+    color: #fff;
+    position: relative;
+}
+.btn__link:hover {
+    background-color: transparent;
+    border: 3px solid #FF9900;
+    color: #000;
+}
+.btn__link::before {
+    position: absolute;
+    content: "";
+    top: 23px;
+    left: 30px;
+
+    background-image: url('../img/icons/phone-white.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left bottom;
+    width: 35px;
+    height: 35px;
+    z-index: 1;
+}
+.btn__link:hover::before {
+    background-image: url('../img/icons/phone-black.svg');
+}
+.hero__img {
+    margin: 0 auto;
+    max-width: 400px;
+    max-height: 300px;
+}
+
+/*Benefits*/
+.subtitle {
+    text-align: center;
+    font-size: 36px;
+    font-family: 'Montserrat';
+    font-weight: 700;
+    max-width: 490px;
+    margin: 70px auto 60px;
+
+    position: relative;
+    padding: 0 0 40px;
+}
+.subtitle::after {
+    position: absolute;
+    right: 150px;
+    bottom: 0;
+    content: "";
+    display: block;
+    background-color: #FF9900;
+    width: 200px;
+    height: 3px;
+}
+.benefits__list {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 15px;
+    padding: 0;
+    margin: 0;
+}
+.benefits__items {
+    display: block;
+    margin: 0 35px;
+}
+.benefits__subtitile {
+    text-align: center;
+    font-size: 32px;
+    font-family: 'Montserrat';
+    font-weight: 700;
+    margin: 20px 0;
+}
+.benefits__icons {
+    display: block;
+    margin: 0 auto;
+}
+.benefits__text {
+    text-align: center;
+    font-size: 24px;
+    font-family: 'Montserrat';
+    font-weight: 500;
+    margin: 20px 0;
+    padding: 5px;
+    border: 3px solid #FF9900;
+    border-radius: 10px;
+}
+.benefits--materials {
+    margin-top: 15px;
+}
+
+/*Expirience*/
+.background {
+    background-color: #6C6C6C;
+    padding: 50px 0;
+}
+.expirience__flex {
+    display: flex;
+    align-items: center;
+}
+.expirience__text {
+    text-align: justify;
+    color: #fff;
+    font-size: 17px;
+    font-family: 'Montserrat';
+    font-weight: 500;
+    padding: 20px 5px;
+    margin-right: 50px;
+
+    border: 3px solid #FF9900;
+    border-radius: 10px;
+}
+.expirience__img {
+    display: block;
+    max-width: 520px;
+    max-height: 330px;
+    border: 3px solid #FF9900;
+    border-radius: 10px;
+}
+
+/*Materials*/
+.materials {
+    margin: 0 auto 70px;
+}
+.materials__list {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 15px;
+    padding: 0;
+}
+.materials__items {
+    display: block;
+}
+.material__img {
+    max-width: 300px;
+    height: 250px;
+
+    border: 3px solid #FF9900;
+    border-radius: 10px;
+}
+.materials__text {
+    margin: 35px 0 0;
+}
+
+/*Goods*/
+.goods__flex {
+    display: flex;
+}
+.goods__wrap {
+    width: 900px;
+}
+.goods__subtitle {
+    margin: 0;
+    color: #fff;
+}
+.goods__subtitle:after {
+    left: 10px;
+    bottom: 20px;
+    width: 100px;
+}
+.goods__text {
+    color: #fff;
+    margin: 60px 100px 0 10px;
+}
+.goods__about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.goods__call {
+    font-size: 24px;
+    color: #fff;
+    font-weight: 700;
+    font-family: 'Montserrat';
+    text-align: center;
+    margin: 0 0 50px;
+}
+
+/*Price*/
+.price__flex {
+    display: flex;
+}
+.price__text {
+    margin: 0;
+    margin-right: 100px;
+    padding: 20px 10px 0;
+}
+.price__img {
+    max-width: 500px;
+    max-height: 180px;
+
+    border: 3px solid #FF9900;
+    border-radius: 10px;
+}
+
+/*Ready*/
+.ready__subtitle {
+    max-width: 1400px;
+}
+.ready__subtitle::after {
+    width: 550px;
+    right: 270px
+}
+
+/*Footer*/
+.footer {
+    position: relative;
+    background-color: #000;
+    color:#fff;
+    padding: 31px 0;
+    
+}
+.footer::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+
+    background-image: url("../img/Logo\ Plastic\ чб\ 1.png");
+    background-repeat: no-repeat;
+    width: 500px;
+    height: 550px;
+}
+.footer__flex {
+    display: flex;
+    position: relative;
+}
+.copypast {
+    position: absolute;
+    bottom: 0px;
+
+    font-size: 16px;
+    color: #9C9998;
+    font-weight: 500;
+    font-family: 'Montserrat';
+}
+.copypast__text {
+    color: #9C9998;
+}
+.footer__logo {
+    width: 250px;
+    height: 65px;
+
+    padding: 0 10px;
+    border: 3px solid #FF9900;
+    border-radius: 10px;
+}
+.contacts {
+    margin: 0 80px;
+}
+.footer__subtitle {
+    padding: 0;
+    margin: 0 0 15px;
+    font-size: 32px;
+    color: #FF9900;
+    font-weight: 700;
+    font-family: 'Montserrat';
+}
+.contacts__list {
+    padding: 0;
+}
+.contacts__items {
+    display: block;
+    text-decoration: none;
+    font-size: 16px;
+    color: #fff;
+    font-weight: 500;
+    font-family: 'Montserrat';
+    padding-left: 40px;
+    margin-bottom: 15px;
+
+    position: relative;
+}
+.contacts__text {
+    color: #fff;
+}
+.contacts__items:first-child::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    background-image: url("../img/icons/phone-small.svg");
+    background-repeat: no-repeat;
+    width: 16px;
+    height: 16px;
+}
+.contacts__items:nth-child(2):before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    background-image: url("../img/icons/email.svg");
+    background-repeat: no-repeat;
+    width: 22.5px;
+    height: 16px;
+}
+.nav__items {
+    display: block;
+    margin-bottom: 10px;
+}
+.nav__items:last-child {
+    margin: 0;
+}
+.nav__link {
+    text-decoration: none;
+    font-size: 16px;
+    color: #fff;
+    font-weight: 500;
+    font-family: 'Montserrat';
+}
+.lang {
+    color: #fff;
+}
+.hide__lang {
+    color: #fff;
+}
