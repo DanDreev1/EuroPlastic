@@ -1,5 +1,6 @@
 * {
     box-sizing: border-box;
+    margin: 0;
 }
 
 .body{
@@ -28,7 +29,6 @@
 #nav {
     display: flex;
     padding: 25px 0;
-    position: relative;
 }
 
 .nav__menu {
@@ -37,7 +37,7 @@
 }
 
 .menu__bottom {
-    margin-top: 20px;
+    margin-top: 23px;
 }
 
 .nav__item {
@@ -83,26 +83,9 @@
     font-family: 'Montserrat';
     font-weight: 700;
     margin-left: 60px;
-}
-#hide__lang {
-    position: absolute;
-    display: none;
-    right: 0;
-    bottom: 5px;
-
-    font-size: 16px;
-    font-family: 'Montserrat';
-    font-weight: 700;
-    color: #000;
-    text-align: center;
+    padding: 20px 20px;
     text-decoration: none;
-    padding: 17px 0 0;
-
-    border: 3px solid #FF9900;
-    border-radius: 10px;
-    background-color: transparent;
-    width: 70px;
-    height: 60px;
+    color: #000;
 }
 
 /*Hero*/
@@ -366,13 +349,15 @@
 
 /*Footer*/
 .footer {
-    position: relative;
     background-color: #000;
     color:#fff;
-    padding: 31px 0;
     
 }
-.footer::before {
+.footer__img {
+    position: relative;
+    padding: 31px 0;
+}
+.footer__img::before {
     content: "";
     display: block;
     position: absolute;
@@ -381,7 +366,7 @@
     background-image: url("../img/Logo\ Plastic\ чб\ 1.png");
     background-repeat: no-repeat;
     width: 500px;
-    height: 550px;
+    height: 223px;
 }
 .footer__flex {
     display: flex;
