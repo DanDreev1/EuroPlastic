@@ -24,7 +24,9 @@ questionButtons.forEach((button, index) => {
 });
 
 const burger = document.querySelector('.burger');
+const burgerList = document.querySelector('.burger__list');
 
 burger.addEventListener('click', () => {
   burger.classList.toggle('active');
+  burgerList.style.display = burger.classList.contains('active') ? 'block' : 'none';
 });
