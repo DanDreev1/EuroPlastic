@@ -23,20 +23,8 @@ questionButtons.forEach((button, index) => {
     });
 });
 
-const burger = document.querySelector('.burger'); 
-const burgerAfter = document.querySelector('.burger::after'); 
-const burgerBefore = document.querySelector('.burger::before'); 
+const burger = document.querySelector('.burger');
 
-burger.addEventListener("click", () => {
-  // Check if the transform is "none" using getComputedStyle
-  const afterTransform = getComputedStyle(burgerAfter, null).getPropertyValue('transform');
-  const beforeTransform = getComputedStyle(burgerBefore, null).getPropertyValue('transform');
-
-  if (afterTransform === 'none' && beforeTransform === 'none') {
-    burgerAfter.style.transform = 'rotate(45deg)';
-    burgerBefore.style.transform = 'rotate(-45deg)';
-  } else {
-    burgerAfter.style.transform = 'none';
-    burgerBefore.style.transform = 'none';
-  }
+burger.addEventListener('click', () => {
+  burger.classList.toggle('active');
 });

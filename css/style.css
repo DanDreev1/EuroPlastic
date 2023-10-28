@@ -728,7 +728,20 @@
         font-family: 'Montserrat';
         line-height: 50px;
     }
-    .active {
+    .active__link {
         text-decoration: underline #FF9900; 
+    }
+    .burger.active .burger::before {
+        transform: rotate(45deg);
+        top: 0;
+    }
+      
+    .burger.active .burger::after {
+        transform: rotate(-45deg);
+        top: 0;
+    }
+      
+    .burger.active + .burger__list {
+        display: block;
     }
 }
