@@ -366,8 +366,10 @@
     display: flex;
 }
 .price__text {
+    display: flex;
+    align-items: center;
     margin-right: 100px;
-    padding: 20px 10px 0;
+    padding: 0 10px 0;
 }
 .price__img {
     max-width: 500px;
