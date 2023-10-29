@@ -1,3 +1,14 @@
+const langButton = document.getElementById('lang');
+const langMenu = document.querySelector('.lang__menu');
+
+langButton.addEventListener('click', () => {
+    if (langMenu.style.display === 'flex') {
+        langMenu.style.display = 'none'
+    } else {
+        langMenu.style.display = 'flex'
+    }
+})
+
 // Get all FAQ question buttons and corresponding text elements
 const questionButtons = document.querySelectorAll('.faq__question');
 const textElements = document.querySelectorAll('.faq__text');
