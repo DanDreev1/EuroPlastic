@@ -254,6 +254,8 @@
     margin: 0 auto;
 }
 .benefits__text {
+    display: flex;
+    align-items: center;
     text-align: center;
     font-size: 24px;
     font-family: 'Montserrat';
@@ -277,6 +279,8 @@
     align-items: center;
 }
 .expirience__text {
+    display: flex;
+    align-items: center;
     text-align: justify;
     color: #fff;
     font-size: 17px;
@@ -561,7 +565,8 @@
 
 /*FAQ'S*/
 .faq__question {
-    display: inline-block;
+    display: flex;
+    align-items: center;
     font-size: 16px;
     color: #000;
     font-weight: 700;
@@ -1056,8 +1061,8 @@
     }
 
     .faq__question {
-        padding: 25px 70px 25px 70px;
-        font-size: 12px;
+        padding: 15px 70px 25px 70px;
+        font-size: 11px;
     }
     .faq__question::after {
         right: 30px;
