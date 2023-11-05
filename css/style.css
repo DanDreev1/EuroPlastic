@@ -460,17 +460,17 @@
 
     position: relative;
 }
-.contacts__text {
+.contacts__email {
     color: #fff;
 }
-.contacts__items:first-child::before {
+.contacts__items:nth-child(1):before {
     content: "";
     display: block;
     position: absolute;
     top: 0;
     left: 0;
 
-    background-image: url("../img/icons/phone-small.svg");
+    background-image: url('../img/icons/phone-small.svg');
     background-repeat: no-repeat;
     background-size: contain;
     width: 16px;
@@ -486,8 +486,14 @@
     background-image: url("../img/icons/email.svg");
     background-repeat: no-repeat;
     background-size: contain;
-    width: 22.5px;
-    height: 16px;
+    width: 20px;
+    height: 20px;
+}
+.contacts__text {
+    font-size: 16px;
+    color: #fff;
+    font-weight: 500;
+    font-family: 'Montserrat';
 }
 .nav__items {
     display: block;
